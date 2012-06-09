@@ -2,6 +2,12 @@
 
 *Ruby on Rails application to create recipes using mysql instead of SocialCookbook which uses sqlite*
 
+###Versions
+* Ruby 1.9.2
+* Rails 3.2.5
+* MySql 5.5.25
+* Bundle 1.1.4
+
 ###Getting started
 
 * You will need [Ruby] (http://www.ruby-lang.org/en/downloads) language version 1.8.7 or higher
