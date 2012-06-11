@@ -6,7 +6,7 @@
 	<h1><%= @recipe.name %> <small><%= @recipe.author %>, <%= @recipe.category %></small></h1>
 </div>
  
-<h3>Instructions</h3>
+<h3>Instructions <small><%= link_to('Edit', edit_recipe_path(@recipe)) %></small></h3>
 <p><%= @recipe.instructions %></p>
 
 <h3>Ingredients</h3>
@@ -16,9 +16,8 @@
 <%= render "ingredients/form" %>
 
 <p class="download-info">	  
-	  <%= link_to('Save and finish', recipes_path, :class => 'btn btn-primary') %> 
-	  <%= link_to('Edit Recipe', edit_recipe_path(@recipe), :class => 'btn') %> 
-	  <%= link_to('Remove', @recipe, confirm: 'Are you sure?', method: :delete, :class => 'btn') %>	 	
+	  <%= link_to('Save and finish', recipes_path, :class => 'btn btn-primary') %> 	  
+	  <%= link_to('Delete recipe', @recipe, confirm: 'Are you sure?', method: :delete, :class => 'btn') %>	 	
 	  <%= link_to('Go to dashboard', recipes_path, :class => 'btn') %>
 </p>
 

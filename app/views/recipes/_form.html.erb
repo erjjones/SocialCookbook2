@@ -20,8 +20,8 @@
 	<p>Select a category</p>
     <%= f.collection_select :category, Recipe::CATEGORIES, :to_s, :to_s, :include_blank => false %>  
 	<p>Define some basic instructions</p>
-    <%= f.text_area :instructions, :size => "40x15" %>
-	
+    <%= f.text_area :instructions, :size => "40x15" %>	
+	<br/><%= render @recipe.ingredients %><br/>	
     <!-- <%= f.text_field :image %>-->
     <%= f.submit "Save and continue", :class => 'btn btn-primary' %> <%= link_to('Cancel', recipes_path, :class => 'btn') %> 
   </div>

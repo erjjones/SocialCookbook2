@@ -1,0 +1,8 @@
+name: SocialCookbook
+instances: 1
+framework:
+  type: rails3
+  runtime: ruby19
+mem: 128
+services:
+  mssql-43a13: mssql
