@@ -5,4 +5,4 @@ framework:
   runtime: ruby19
 mem: 128
 services:
-  mssql-43a13: mssql
+  mysql-3b884: mysql
